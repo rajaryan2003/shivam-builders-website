@@ -1,0 +1,260 @@
+.services-section {
+  background-color: var(--white);
+  position: relative;
+}
+
+.services-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(135deg, var(--primary-color) 0%, #e6a800 100%);
+  clip-path: polygon(0 0, 100% 70%, 100% 100%, 0 100%);
+}
+
+/* Service Card Styles */
+.service-card {
+  background: var(--white);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  border: 1px solid var(--border-color);
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  border-color: var(--primary-color);
+}
+
+.service-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, var(--primary-color) 0%, #e6a800 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.service-icon i {
+  font-size: 2rem;
+  color: var(--white);
+}
+
+.service-card:hover .service-icon {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(248, 180, 0, 0.3);
+}
+
+.service-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.service-description {
+  color: var(--text-light);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.service-features {
+  margin-bottom: 1.5rem;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+}
+
+.feature-list li i {
+  margin-right: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.service-cta {
+  text-align: center;
+}
+
+.btn-outline-primary-custom {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  background: transparent;
+  transition: all 0.3s ease;
+  border-radius: 25px;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+}
+
+.btn-outline-primary-custom:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+/* Service Overlay */
+.service-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(248, 180, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+  border-radius: 15px;
+}
+
+.service-card:hover .service-overlay {
+  opacity: 1;
+}
+
+.overlay-content {
+  text-align: center;
+  color: var(--white);
+}
+
+.overlay-content i {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.overlay-content p {
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Services CTA Section */
+.services-cta {
+  background: linear-gradient(135deg, var(--light-gray) 0%, #f0f0f0 100%);
+  border-radius: 15px;
+  padding: 3rem;
+  border: 1px solid var(--border-color);
+}
+
+.services-cta h4 {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.services-cta p {
+  color: var(--text-light);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 991.98px) {
+  .service-card {
+    padding: 1.5rem;
+  }
+  
+  .service-icon {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .service-icon i {
+    font-size: 1.8rem;
+  }
+  
+  .service-title {
+    font-size: 1.2rem;
+  }
+  
+  .services-cta {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-section::before {
+    height: 50px;
+  }
+  
+  .service-card {
+    padding: 1.25rem;
+  }
+  
+  .service-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .service-icon i {
+    font-size: 1.5rem;
+  }
+  
+  .service-title {
+    font-size: 1.1rem;
+  }
+  
+  .service-description {
+    font-size: 0.9rem;
+  }
+  
+  .feature-list li {
+    font-size: 0.8rem;
+  }
+  
+  .services-cta {
+    padding: 1.5rem;
+  }
+  
+  .services-cta h4 {
+    font-size: 1.3rem;
+  }
+  
+  .services-cta p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .service-card {
+    padding: 1rem;
+  }
+  
+  .service-icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .service-icon i {
+    font-size: 1.2rem;
+  }
+  
+  .service-title {
+    font-size: 1rem;
+  }
+  
+  .services-cta {
+    padding: 1rem;
+  }
+} 

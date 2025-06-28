@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/shivam-builders-website/static/css/main.cdeb9b97.css",
+    "main.js": "/shivam-builders-website/static/js/main.e9b98f39.js",
+    "static/media/ganesha.jpg": "/shivam-builders-website/static/media/ganesha.a42ef1c3ef6b8327b4db.jpg",
+    "index.html": "/shivam-builders-website/index.html",
+    "main.cdeb9b97.css.map": "/shivam-builders-website/static/css/main.cdeb9b97.css.map",
+    "main.e9b98f39.js.map": "/shivam-builders-website/static/js/main.e9b98f39.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cdeb9b97.css",
+    "static/js/main.e9b98f39.js"
+  ]
+}
