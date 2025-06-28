@@ -1,0 +1,15 @@
+{
+  "short_name": "Shivam Chhotu Builders",
+  "name": "Shivam Chhotu Builders and Contractors",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#F8B400",
+  "background_color": "#ffffff"
+} 
